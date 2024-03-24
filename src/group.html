@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body >
+    <div class=" grid h-screen w-screen grid-cols-2 gap-8" style="grid-template-columns: 18% 82%;">
+        <div class=" color h-screen w-full bg-gray-900 text-white  border-white">
+            <div class="mt-4 mb-8">
+                <span class="material-symbols-outlined text-6xl ml-10">
+                    savings
+                    </span>
+                <p class="font-sitefont text-2xl ml-3">Anchor Bank</p>
+
+            </div>
+            <a href="dashboard.html">
+                <div class="mt-4 mb-6 hover:cursor-pointer hover:bg-gray-800 rounded   flex ">
+                
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        Dashboard
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3" >Dashboard</p>
+    
+                </div>
+           
+            </a>
+       
+      
+           
+            <a href="send.html">
+                <div class="mt-4 mb-6 hover:cursor-pointer rounded hover:bg-gray-800 flex">
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        send_money
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3">Send Money</p>
+    
+                </div>
+            </a>
+            <a href="withdraw.html">
+                <div class="mt-4 mb-6  hover:cursor-pointer rounded hover:bg-gray-800 flex">
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        eject
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3">Withdraw</p>
+    
+                </div>
+            </a>
+            <a href="group.html">
+                <div class="mt-4 mb-6 flex hover:cursor-pointer rounded  hover:bg-gray-800">
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        groups
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3">Groups</p>
+    
+                </div>
+
+            </a>
+            <a href="user.html">
+                <div class="mt-4 mb-6 flex hover:cursor-pointer rounded hover:bg-gray-800">
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        account_circle
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3">My Profile</p>
+    
+                </div>
+
+            </a>
+
+
+
+            <a href="faq.html">
+                <div class="mt-4 mb-6 flex hover:cursor-pointer rounded  hover:bg-gray-800">
+                    <span class="material-symbols-outlined text-3xl ml-2">
+                        quiz
+                        </span>
+                    <p class="font-sitefont text-xl mt-1 ml-3">FAQ</p>
+    
+                </div>
+            </a>
+
+
+
+        </div>
+        <div class="overflow-y-auto">
+            <div class="  w-full grid grid-cols-1 " style="grid-template-rows: 50% 50%;">
+                <div class="mt-6 grid grid-cols-2 gap-4 " style="grid-template-columns:  60% 40%;">
+                    
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
+                        <p class="text-2xl font-medium text-center">Sacco Members</p>
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-800 dark:text-white">
+                                <tr>
+                                    <th scope="col" class="p-4">
+                                        <div class="flex items-center">
+                
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Name
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Balance
+                                    </th>
+                
+                
+                                </tr>
+                            </thead>
+                            <tbody class="sacco-table">
+                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-10 ml-8   p-2">
+                        <p class="text-2xl font-sitefont font-medium">Add Member to Chama</p>
+                        <p class="text-l font-sitefont font-medium">Enter Member Name:</p>
+                        <input type="text" id="small-input" class=" mr-4 ml-2 block w-56 h-8 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <p class="mt-2 text-l font-sitefont font-medium">Enter Member Balance:</p>
+                        <input type="text" id="small-input" class=" mb-2 mr-4 ml-2 block w-56 h-8 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <button type="submit" class="text-white ml-16 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Member</button>
+        
+                    </div>
+        
+        
+                </div>
+                <div class="  grid grid-cols-2  gap-4" style="grid-template-columns: 60% 40% ;">
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-20">
+                        <p class="text-2xl font-medium text-center">Sacco Members</p>
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-800 dark:text-white">
+                                <tr>
+                                    <th scope="col" class="p-4">
+                                        <div class="flex items-center">
+                
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Name
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Balance
+                                    </th>
+                
+                
+                                </tr>
+                            </thead>
+                            <tbody class="chama-table">
+                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-10 ml-8   p-2">
+                        <p class="text-2xl font-sitefont font-medium">Add Member to Chama</p>
+                        <p class="text-l font-sitefont font-medium">Enter Member Name:</p>
+                        <input type="text" id="small-input" class=" mr-4 ml-2 block w-56 h-8 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <p class="mt-2 text-l font-sitefont font-medium">Enter Member Balance:</p>
+                        <input type="text" id="small-input" class=" mb-2 mr-4 ml-2 block w-56 h-8 p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <button type="submit" class="text-white ml-16 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Member</button>
+        
+                    </div>
+        
+        
+                </div>
+        
+        
+        </div>
+        </div>
+    
+</body>
+<script type="module" src="../scripts/groups.js"></script>
+</html>
